@@ -1,18 +1,37 @@
 html {
   font-family: Pretendard;
-}
-* {
   box-sizing: border-box;
-  /* line-height: 1.5; */
 }
 a {
   text-decoration: none;
 }
 .inner {
-  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
   text-align: center;
+  padding: 0 20px;
 }
+.btn {
+  width: 288px;
+  height: 64px;
+  font-size: 20px;
+  font-weight: 600;
+  border: 1px solid #111;
+  border-radius: 99px;
+  background-color: #fff;
+  cursor: pointer;
+  letter-spacing: -1px;
+}
+.btn.btn--black {
+  color: #fff;
+  border: none;
+  background-color: #111;
+}
+.btn.btn--black:hover {
+  color: #fff;
+  background-color: rgba(17, 17, 17, 0.6);
+}
+
 /* header */
 header {
   max-width: 1920px;
@@ -58,15 +77,18 @@ header {
   color: black;
 }
 
-/* main */
+/* main section */
 
 .main {
   padding: 40px 0;
   color: #111;
+  background-image: url(https://img.freepik.com/free-vector/abstract-blue-geometric-shapes-background_1035-17545.jpg?w=996&t=st=1695113799~exp=1695114399~hmac=7cea277cd39fa61c8aa3c48bdfafff19eccb52c2e85cf9e598cac22b93a7ea9a);
+  background-size: 100% 400px;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 .mainContent h1 {
   font-size: 48px;
-  /* text-align: center; */
   line-height: 1.25;
 }
 .mainContent h1 > span {
@@ -75,5 +97,53 @@ header {
 .mainContent h2 {
   font-size: 24px;
   padding: 20px 0;
+  font-weight: 500;
+  line-height: 32px;
+}
+.main > .inner > .btn-group {
+  margin: 30px 0;
+}
+.main > .inner > .btn-group > .btn + .btn {
+  margin-left: 10px;
 }
 
+/* Platform Service section */
+.platformService {
+  margin-top: 140px;
+}
+.platformService > .title {
+  color: #4262ff;
+  font-size: 28px;
+  font-weight: 700;
+}
+.platformService > h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 40px;
+}
+.platformService > h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.platformService img {
+  width: 100%;
+  margin-top: 70px;
+}
+
+/* Steps */
+.steps > .depth1 {
+  padding: 20px;
+  display: flex;
+}
+.steps > .depth1 > li > span:first-child {
+  font-size: 18px;
+  color: #4262ff;
+  font-weight: 700;
+  margin-right: 5px;
+}
+.steps > .depth1 > li > span:nth-child(2) {
+  font-size: 20px;
+  color: #111;
+  font-weight: 700;
+}
