@@ -135,6 +135,10 @@ header {
 .steps > .depth1 {
   padding: 20px;
   display: flex;
+  column-gap: 1.25rem
+}
+.steps > .depth1 > li {
+  width: 19%;
 }
 .steps > .depth1 > li > span:first-child {
   font-size: 18px;
@@ -146,4 +150,35 @@ header {
   font-size: 20px;
   color: #111;
   font-weight: 700;
+}
+.steps > .depth1 > li > .depth2 {
+  padding-top: 20px;
+}
+.steps > .depth1 > li > .depth2 > li {
+  padding: 20px 10px;
+  border-top: 1px solid #dee4ed;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/* Steps btn */
+.step_btn_group {
+  /* max-width: 1400px; */
+  display: flex;
+  justify-content: space-between;
+}
+.step_btn_group button:not(.half_btn) {
+  width: 263px;
+  height: 56px;
+}
+.step_btn_group > .class_half_btn > .half_btn {
+  width: 129px;
+  height: 56px;
+  font-size: 20px;
+}
+.step_btn_group > .class_half_btn > .half_btn:first-child {
+  border-radius: 99px 0 0 99px;
+}
+.step_btn_group > .class_half_btn > .half_btn:last-child {
+  border-radius: 0 99px 99px 0;
 }
