@@ -1,8 +1,17 @@
-a {
-  text-decoration: none;
+html {
+  font-family: Pretendard;
 }
 * {
   box-sizing: border-box;
+  /* line-height: 1.5; */
+}
+a {
+  text-decoration: none;
+}
+.inner {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 /* header */
 header {
@@ -15,38 +24,56 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* position: relative; */
 }
 .headerBox > nav {
+  max-width: 1400px;
   padding: 0 10px;
 }
 .headerBox > nav > ul {
   display: flex;
 }
-.headerBox > nav > ul {
-  display: flex;
-  justify-content: space-between;
-}
 .headerBox > nav > ul > li > a {
   display: block;
-  width: 150px;
-  color: #111;
-  font-size: 20px;
+  color: rgba(17, 17, 17, 0.6);
+  font-size: 24px;
   text-align: center;
+  font-weight: 700;
+  transition: .3s;
 }
 .headerBox > nav > ul > li > a:hover {
-  font-weight: 700;
   text-decoration: underline;
-  color: #333;
+  color: #111;
 }
 
 .headerBox > nav > ul > li + li {
-  /* margin-left: 10px; */
-}
-.headerBox .icons img, 
+  margin-left: 30px;
+} 
 .headerBox .icons span {
   margin-left: 10px;
-}
-.headerBox .icons span {
   font-size: 26px;
   color: #4262FF;
 }
+.headerBox .icons a span:hover {
+  color: black;
+}
+
+/* main */
+
+.main {
+  padding: 40px 0;
+  color: #111;
+}
+.mainContent h1 {
+  font-size: 48px;
+  /* text-align: center; */
+  line-height: 1.25;
+}
+.mainContent h1 > span {
+  font-weight: 700;
+}
+.mainContent h2 {
+  font-size: 24px;
+  padding: 20px 0;
+}
+
