@@ -10,6 +10,7 @@ a {
   margin: 0 auto;
   text-align: center;
   padding: 0 20px;
+  position: relative;
 }
 .btn {
   width: 288px;
@@ -31,7 +32,11 @@ a {
   color: #fff;
   background-color: rgba(17, 17, 17, 0.6);
 }
-
+.title {
+  color: #4262ff;
+  font-size: 28px;
+  font-weight: 700;
+}
 /* header */
 header {
   max-width: 1920px;
@@ -111,11 +116,6 @@ header {
 .platformService {
   margin-top: 140px;
 }
-.platformService > .title {
-  color: #4262ff;
-  font-size: 28px;
-  font-weight: 700;
-}
 .platformService > h1 {
   font-size: 48px;
   font-weight: 700;
@@ -128,12 +128,13 @@ header {
 }
 .platformService img {
   width: 100%;
+  height: auto;
   margin-top: 70px;
 }
 
 /* Steps */
 .steps > .depth1 {
-  padding: 20px;
+  padding: 20px 20px 0;
   display: flex;
   column-gap: 1.25rem
 }
@@ -163,13 +164,19 @@ header {
 
 /* Steps btn */
 .step_btn_group {
-  /* max-width: 1400px; */
+  position: absolute;
+  right: 40px;
   display: flex;
-  justify-content: space-between;
+  column-gap: 20px;
+  /* justify-content: space-between; */
 }
 .step_btn_group button:not(.half_btn) {
-  width: 263px;
+  width: 255px;
   height: 56px;
+}
+.step_btn_group > .class_half_btn {
+  display: flex;
+  column-gap: 4px;
 }
 .step_btn_group > .class_half_btn > .half_btn {
   width: 129px;
@@ -181,4 +188,18 @@ header {
 }
 .step_btn_group > .class_half_btn > .half_btn:last-child {
   border-radius: 0 99px 99px 0;
+}
+
+/* section: Service Guide */
+.serviceGuide {
+  background-color: #f2f5f9;
+}
+.serviceGuide .title {
+  margin-top: 130px;
+  padding-top: 100px;
+}
+.serviceGuide > .inner > h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 40px 0;
 }
