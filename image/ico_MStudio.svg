@@ -1,0 +1,10 @@
+<svg id="ico_MStudio" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <rect id="guide" width="30" height="30" fill="red" opacity="0"/>
+  <path id="빼기_121" data-name="빼기 121" d="M4776,22891h-21a2,2,0,0,1-2-2v-13a2,2,0,0,1,2-2h21a2,2,0,0,1,2,2v13A2,2,0,0,1,4776,22891Zm-13.176-12.844a.2.2,0,0,0-.2.2v8.285a.2.2,0,0,0,.2.2.238.238,0,0,0,.1-.027l6.727-4.143a.2.2,0,0,0,.1-.174.193.193,0,0,0-.1-.166l-6.727-4.141A.189.189,0,0,0,4762.829,22878.156Z" transform="translate(-4750.502 -22870.5)" fill="#fff"/>
+  <g id="타원_297" data-name="타원 297" transform="translate(7.5 22.5)" fill="none" stroke="#fff" stroke-width="2">
+    <circle cx="3" cy="3" r="3" stroke="none"/>
+    <circle cx="3" cy="3" r="2" fill="none"/>
+  </g>
+  <rect id="사각형_1866" data-name="사각형 1866" width="6" height="2" rx="1" transform="translate(2.5 24.5)" fill="#fff"/>
+  <rect id="사각형_1867" data-name="사각형 1867" width="15" height="2" rx="1" transform="translate(12.5 24.5)" fill="#fff"/>
+</svg>

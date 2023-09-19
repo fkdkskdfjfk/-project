@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="ico_external_link" data-name="ico_external link" transform="translate(-1408 -219)">
+    <rect id="base" width="20" height="20" transform="translate(1408 219)" fill="none" opacity="0.297"/>
+    <path id="빼기_1" data-name="빼기 1" d="M11-3591H4a4,4,0,0,1-4-4v-7a4,4,0,0,1,4-4H9v2H4a2,2,0,0,0-2,2v7a2,2,0,0,0,2,2h7a2,2,0,0,0,2-2v-5h2v5A4,4,0,0,1,11-3591Z" transform="translate(1409 3829)" fill="#111"/>
+    <line id="선_1" data-name="선 1" x1="8" y2="8" transform="translate(1417 222)" fill="none" stroke="#111" stroke-linecap="round" stroke-width="2"/>
+    <path id="패스_25" data-name="패스 25" d="M1433,3814h3a1.961,1.961,0,0,1,2,2v3" transform="translate(-12 -3593)" fill="none" stroke="#111" stroke-linecap="round" stroke-width="2"/>
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: #4262ff;
+      }
+    </style>
+  </defs>
+  <g id="ico_next" transform="translate(-213 -3369)">
+    <rect id="사각형_40225" data-name="사각형 40225" class="cls-1" width="40" height="40" transform="translate(213 3369)"/>
+    <g id="ico_pre" transform="translate(227.192 3376.957)">
+      <rect id="사각형_40226" data-name="사각형 40226" class="cls-2" width="16.97" height="3" transform="translate(10.747 14.165) rotate(-135)"/>
+      <rect id="사각형_40227" data-name="사각형 40227" class="cls-2" width="16.97" height="3" transform="translate(12.868 12.164) rotate(135)"/>
+    </g>
+  </g>
+</svg>

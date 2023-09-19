@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="ico_util_anchor" transform="translate(-37 8)">
+    <rect id="BOX" width="40" height="40" rx="20" transform="translate(37 -8)" fill="#fff"/>
+    <rect id="사각형_1132" data-name="사각형 1132" width="30" height="30" transform="translate(42 -3)" fill="none" opacity="0.208"/>
+    <rect id="사각형_1133" data-name="사각형 1133" width="16" height="2" rx="1" transform="translate(49 17)" fill="#4262ff"/>
+    <rect id="사각형_1134" data-name="사각형 1134" width="16" height="2" rx="1" transform="translate(49 11)" fill="#4262ff"/>
+    <rect id="사각형_1135" data-name="사각형 1135" width="16" height="2" rx="1" transform="translate(49 5)" fill="#4262ff"/>
+  </g>
+</svg>
