@@ -7,15 +7,24 @@
 
   <!-- 스타일 초기화 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
+  
   <!-- 구글 머티리얼 아이콘 -->
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <!-- font: pretendard -->
+  
   <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
   <!--  rel과 cross 사이에 as="style" -->
+
+  <!-- SWIPER CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
   <!-- CSS -->
   <link rel="stylesheet" href="/css/main.css">
   
+  <!-- SWIPER JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 </head>
 <body>
   <!-- HEADER -->
@@ -173,13 +182,36 @@
       <h1>직업을 선택하시면, 전문가가 도입방안을 컨설팅해드립니다</h1>
       <p>직원 채용이 어려운 곳, 전문 인력이 필요한 곳, 24시간 365일 일을 해야 하는 곳에, AI휴먼 채용을 추천</p>
 
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            
+      <div class="swipeContent">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div>
+                <img src="./image/img_kor_tutor@2x-51e89faf.png" alt="AI 한국어 강사">
+              </div>
+              <p>AI 한국어 강사</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/img_announcer@2x-e637b904.png" alt="AI 아나운서">
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/img_guard@2x-adc572f7.png" alt="AI 경비원">
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/img_bank@2x-cc946168.png" alt="AI 은행원">
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/img_beauty@2x-8d394910.png" alt="AI 뷰티 어시스턴트">
+            </div>
+            <div class="swiper-slide">
+              <img src="./image/img_call@2x-ebc00ec1.png" alt="AI 콜센터 상담사">
+            </div>
           </div>
         </div>
       </div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
 
     </div>
   </section>

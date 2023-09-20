@@ -270,7 +270,9 @@ header {
 }
 
 /* section: AI Service */
-
+.aiService > .inner {
+  height: 1000px;
+}
 .aiService .title {
   margin-top: 80px;
 }
@@ -284,4 +286,30 @@ header {
   font-size: 20px;
   color: #111;
   margin: 30px 0;
+}
+.aiService .swipeContent{
+  /* display: flex;
+  position: relative; */
+  /* z-index: 1 */
+}
+.aiService .swiper {
+  /* width: 100%; */
+  height: 200px;
+}
+.aiService .swiper img {
+  width: 200px;
+}
+.aiService .swiper p {
+  color: #111;
+  /* position: relative;
+  z-index: 99; */
+  height: 30px;
+}
+.aiService .swiper .swiper-slide {
+  position: relative;
+}
+
+.aiService .swiper .swiper-slide > div:last-child {
+  position: relative;
+  z-index: 13;
 }
