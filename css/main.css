@@ -236,14 +236,31 @@ header {
   color: #111;
   font-family: pretendard;
   text-align: start;
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid #dee4eb;
+  border-radius: 10px;
+  /* position: relative; */
 }
+.serviceGuide > .inner > .btn-guide > .guide:hover {
+  box-shadow: 0px 2px 8px rgba(18, 44, 72, .2);
+}
+
 .serviceGuide > .inner > .btn-guide > .guide > .btn-name {
   font-size: 14px;
   font-weight: 500;
 }
 .serviceGuide > .inner > .btn-guide > .guide > .btn-content {
   width: 200px;
-  height: 70px;
+  height: 100px;
   font-size: 28px;
   font-weight: 700;
 }
+.serviceGuide > .inner > .btn-guide > .guide > div {
+  height: 172px;
+  text-align: right;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
