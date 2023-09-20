@@ -218,11 +218,14 @@ header {
 
 /* section: Service Guide */
 .serviceGuide {
+  padding-top: 100px;
   background-color: #f2f5f9;
+  padding-bottom: 80px;
+
 }
 .serviceGuide .title {
-  margin-top: 130px;
-  padding-top: 100px;
+  /* margin-top: 130px; */
+  /* padding-top: 100px; */
 }
 .serviceGuide > .inner > h1 {
   font-size: 48px;
@@ -240,12 +243,11 @@ header {
   cursor: pointer;
   border: 1px solid #dee4eb;
   border-radius: 10px;
-  /* position: relative; */
+  transition: .3s;
 }
 .serviceGuide > .inner > .btn-guide > .guide:hover {
   box-shadow: 0px 2px 8px rgba(18, 44, 72, .2);
 }
-
 .serviceGuide > .inner > .btn-guide > .guide > .btn-name {
   font-size: 14px;
   font-weight: 500;
@@ -263,4 +265,17 @@ header {
   align-items: flex-end;
   justify-content: flex-end;
 }
+.serviceGuide > .inner > .btn-guide > .guide + .guide {
+  margin-left: 24px;
+}
 
+/* section: AI Service */
+
+.aiService .title {
+  margin-top: 80px;
+}
+.aiService > .inner > h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 40px;
+}
