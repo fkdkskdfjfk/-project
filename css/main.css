@@ -293,7 +293,7 @@ header {
 }
 .aiService .swiper p {
   color: #111;
-  position: absolute;
+  /* position: absolute; */
   bottom: -10px;
   left: 106px;
   font-size: 20px;
@@ -305,6 +305,16 @@ header {
 
 } */
 .aiService > .inner > .serviceBtn {
+  /* position: absolute; */
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  /* margin: 0 auto; */
+
+}
+.aiService > .inner > .serviceBtn > button {
   width: 224px;
   height: 64px;
+  font-size: 20px;
+  font-weight: 500;
 }
