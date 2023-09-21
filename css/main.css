@@ -502,4 +502,49 @@ header {
   margin: 0 auto;
 }
 
-/*  */
+/* contact Us */
+.contactUs {
+  padding: 80px 20px;
+}
+.contactUs > .inner > h1 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: left;
+}
+.contactUs > .inner > .contactBox {
+  display: flex;
+  margin-top: 30px;
+  text-align: left;
+}
+.contactUs > .inner > .contactBox > .boxText input {
+  width: 20px;
+  height: 20px;
+}
+.contactUs > .inner > .contactBox > .boxText label {
+  color: #888;
+  font-size: 20px;
+  font-weight: 700;
+}
+.contactUs > .inner > .contactBox > .boxText p {
+  font-size: 16px;
+  color: #5b636d;
+  line-height: 24px;
+}
+.contactUs > .inner > .contactBox > .boxText :nth-child(3) {
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.contactUs > .inner > .contactBox > .boxInput {
+  display: flex;
+  flex-direction: column;
+}
+.contactUs > .inner > .contactBox > .boxInput > .inputs {
+  /* width: 20%; */
+  padding: 18px;
+  height: 40%;
+  background-color: #f2f3f8;
+}
+.contactUs > .inner > .contactBox > .boxInput > .inputs + .inputs {
+  margin-top: 14px;
+}

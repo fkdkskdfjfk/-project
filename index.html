@@ -311,12 +311,40 @@
     <div class="inner">
       <h1>Contact Us</h1>
       <div class="contactBox">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div class="boxText">
+          <input type="checkbox" id="agree">
+          <label for="agree">개인정보 수집동의*</label>
+          <p>수집하는 개인정보 항목: 이름, 회사명, 연락처, 이메일 주소</p>
+          <p>작성해 주시는 개인 정보는 문의 접수 및 <br>고객 불만 해결을 위해 1년간 보관됩니다.<br>
+            본 동의를 거부할 수 있으나, <br>미동의 시 문의 접수가 불가능합니다.</p>
+        </div>
+        <div class="boxInput">
+          <div class="inputs">
+            <label for="name">이름*</label>
+            <input type="text" id="name">
+          </div>
+          <div class="inputs">
+            <label for="comp">회사명*</label>
+            <input type="text" id="comp">
+          </div>
+          <div class="inputs">
+            <label for="phone">연락처*</label>
+            <input type="text" id="phone">
+          </div>
+          <div class="inputs">
+            <label for="email">이메일*</label>
+            <input type="text" id="email">
+          </div>
+        </div>
+        <div class="boxBtn">
+          <label for="contentInput"></label>
+          <textarea id="contentInput" cols="30" rows="10"></textarea>
+          <button type="button">보내기</button>
+        </div>
       </div>
     </div>
   </section>
+
   <script src="/js/main.js"></script>
 </body>
 </html>
