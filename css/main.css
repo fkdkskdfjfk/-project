@@ -225,7 +225,6 @@ header {
   padding-top: 90px;
   background-color: #f2f5f9;
   padding-bottom: 80px;
-
 }
 .serviceGuide > .inner > h1 {
   font-size: 48px;
@@ -270,13 +269,13 @@ header {
 }
 
 /* section: AI Service */
+.aiService {
+  padding: 80px 0;
+}
 .aiService > .inner {
   position: relative;
-  /* height: 1000px; */
 }
-.aiService .title {
-  margin-top: 80px;
-}
+
 .aiService > .inner > h1 {
   font-size: 48px;
   font-weight: 700;
@@ -294,23 +293,24 @@ header {
 .aiService .swiper p {
   color: #111;
   /* position: absolute; */
-  bottom: -10px;
+  /* bottom: -10px; */
   left: 106px;
   font-size: 20px;
   font-weight: 700;
-  
 }
-/* .aiService > .inner > .swiper-button-prev,
+.aiService .swiper img,
+.aiService .swiper p {
+  cursor: pointer;
+}
+.aiService > .inner > .swiper-button-prev,
 .aiService > .inner > .swiper-button-next {
-
-} */
+  top: 55%;
+}
 .aiService > .inner > .serviceBtn {
   /* position: absolute; */
   margin-top: 60px;
   display: flex;
   justify-content: center;
-  /* margin: 0 auto; */
-
 }
 .aiService > .inner > .serviceBtn > button {
   width: 224px;
@@ -318,3 +318,38 @@ header {
   font-size: 20px;
   font-weight: 500;
 }
+
+/* AI Human */
+.aiHuman {
+  padding: 100px 20px 60px 20px;
+  background-color: #f2f5f9;
+}
+.aiHuman > .humanBox {
+  display: flex;
+  /* justify-content: space-between; */
+  column-gap: 150px;
+  padding: 20px;
+}
+.aiHuman > .humanBox > .img > img {
+  width: 680px;
+  height: 530px;
+}
+.aiHuman > .humanBox > .humanContent > h1 {
+  margin-top: 30px;
+  font-size: 48px;
+  color: #111;
+  font-weight: 700;
+  line-height: 60px;
+}
+.aiHuman > .humanBox > .humanContent > p {
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 27px;
+}
+.aiHuman > .humanBox > .humanContent > button {
+  margin-top: 48px;
+  width: 234px;
+  height: 64px;
+  font-size: 20px;
+}
+
