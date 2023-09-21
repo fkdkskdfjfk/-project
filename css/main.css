@@ -4,6 +4,7 @@ html {
 }
 a {
   text-decoration: none;
+  color: #111;
 }
 button {
   font-family: pretendard;
@@ -510,7 +511,7 @@ header {
   font-size: 40px;
   font-weight: 700;
   text-align: left;
-  padding-left: 120px;
+  padding-left: 90px;
 }
 .contactUs > .inner > .contactBox {
   display: flex;
@@ -604,3 +605,69 @@ header {
 }
 
 /* footer */
+footer {
+  padding: 0 80px;
+}
+footer > .inner {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+footer > .inner > .leftFooter > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer > .inner> .leftFooter > div > button {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+footer > .inner > .leftFooter > p {
+  text-align: left;
+  margin-top: 30px;
+}
+footer > .inner > .leftFooter > div:last-child {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+footer > .inner > .rightFooter {
+  text-align: right;
+}
+footer > .inner > .rightFooter > p:first-child {
+  font-size: 36px;
+  font-weight: 700;
+}
+footer > .inner > .rightFooter > a {
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+footer > .inner > .rightFooter > p:nth-child(3) {
+  margin: 10px 0 20px 0;
+}
+footer > .inner > .rightFooter > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+footer > .inner > .rightFooter > div > button {
+  font-size: 16px;
+  border: none;
+  background-color: #fff;
+  padding: 5px 30px;
+  background-image: url("../image/ico_external_link.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  cursor: pointer;
+}
+footer > .inner > .rightFooter > div > button + button {
+  margin-top: 5px;
+}
