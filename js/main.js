@@ -9,3 +9,25 @@ new Swiper('.aiService .swiper', {
     prevEl: '.aiService .swiper-button-prev'// 다음 버튼 요소
   }
 });
+
+// to-top
+const toTopEl = document.querySelector('#to-top');
+toTopEl.addEventListener('click', function () {
+  gsap.to(window, 0.6, {
+    scrollTo: 0 // 페이지의 0px 지점(최상단)으로 이동, ScrollTOPlugin을 연결해야 사용 가능한 옵션
+  });
+});
+
+window.addEventListener('scroll', function () {
+  if (this.window.scrollY > 500 ) {
+    gsap.to(toTopEl, 0.6, {
+      opacity: 1,
+      x: 0
+    });
+  } else {
+    gsap.to(toTopEl, 0.6, {
+      opacity: 0,
+      x:100
+    });
+  }
+});
