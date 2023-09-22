@@ -189,7 +189,8 @@ header {
   margin-top: 20px;
 }
 .platformService img {
-  width: 100%;
+  /* width: 100%; */
+  width: 100vw;
   height: auto;
   margin-top: 70px;
 }
@@ -260,6 +261,11 @@ header {
   font-weight: 700;
   margin: 40px 0;
 }
+.serviceGuide > .inner > .btn-guide {
+  display: flex;
+  justify-content: center;
+}
+
 .serviceGuide > .inner > .btn-guide > .guide {
   width: 325px;
   height: 372px;
@@ -503,23 +509,26 @@ header {
 }
 .shortcut > .inner > .shortcutBox {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .shortcut > .inner > .shortcutBox > .boxes {
   width: 21%;
   height: 150px;
-  background-color: #f2f5f9;
+  background-color: #f2f5f5;
   border: none;
   border-radius: 10px;
   font-size: 20px;
   font-weight: 600;
+  padding-top: 40px;
 }
 .shortcut > .inner > .shortcutBox > .boxes + .boxes {
   margin-left: 20px;
 }
 .shortcut > .inner > .shortcutBox > .boxes > div:last-child {
-  width: 40px;
-  height: 40px;
+  width: 46px;
+  height: 46px;
   background-color: #5b636d;
   display: flex;
   justify-content: center;
@@ -529,6 +538,7 @@ header {
 }
 .shortcut > .inner > .shortcutBox > .boxes > .iconBox {
   margin: 0 auto;
+  cursor: pointer;
 }
 
 /* contact Us */
