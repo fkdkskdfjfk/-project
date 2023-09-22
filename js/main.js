@@ -12,9 +12,7 @@ new Swiper('.aiService .swiper', {
 window.onload = function(){
   // to-top
   const toTopEl = document.querySelector('#to-top');
-  // console.log('tototo');
   toTopEl.addEventListener('click', function () {
-    console.log('tototo');
     gsap.to(window, 0.6, {
       scrollTo: 0 
     });
@@ -32,6 +30,17 @@ window.onload = function(){
         x: 100
       });
     }
+  });
+
+
+  const spyEls = document.querySelectorAll('section.scroll-spy');
+  spyEls.forEach(function (spyEl) {
+    new ScrollMagic.Scene({ // 감시할 장면(Scene) 추가 및 옵션 지정
+      triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
+      triggerHook: 0.8 
+    })
+    .setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
+    .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수!)
   });
 
 }
