@@ -189,8 +189,7 @@ header {
   margin-top: 20px;
 }
 .platformService img {
-  /* width: 100%; */
-  width: 100vw;
+  width: 100%;
   height: auto;
   margin-top: 70px;
 }
@@ -259,7 +258,7 @@ header {
 .serviceGuide > .inner > h1 {
   font-size: 48px;
   font-weight: 700;
-  margin: 40px 0;
+  margin: 60px 0;
 }
 .serviceGuide > .inner > .btn-guide {
   display: flex;
@@ -268,8 +267,8 @@ header {
 
 .serviceGuide > .inner > .btn-guide > .guide {
   width: 325px;
-  height: 372px;
-  padding: 40px;
+  height: 325px;
+  padding: 40px 40px 30px;
   color: #111;
   font-family: pretendard;
   text-align: start;
@@ -485,6 +484,7 @@ header {
   height: 396px;
 }
 .maumData > .inner > .Box > .DataContent {
+  min-width: 300px;
   text-align: left;
 }
 .maumData > .inner > .Box > .DataContent > div {
@@ -647,7 +647,7 @@ footer {
   padding: 0 80px 40px 80px;
 }
 footer > .inner {
-  width: 1200px;
+  /* width: 1200px; */
   display: flex;
   justify-content: space-between;
 }
@@ -730,4 +730,9 @@ footer > .inner > .rightFooter > div > button + button {
   right: 30px;
   z-index: 9;
   opacity: 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+  
 }
