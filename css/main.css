@@ -606,7 +606,7 @@ header {
 
 /* footer */
 footer {
-  padding: 0 80px;
+  padding: 0 80px 40px 80px;
 }
 footer > .inner {
   width: 1200px;
