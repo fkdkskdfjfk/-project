@@ -25,13 +25,16 @@ button {
   cursor: pointer;
   letter-spacing: -1px;
 }
+.btn.btn--white:hover {
+  border: 2px solid #111;
+}
 .btn.btn--black {
   color: #fff;
   border: none;
   background-color: #111;
+  transition: background-color 0.3s;
 }
 .btn.btn--black:hover {
-  color: #fff;
   background-color: rgba(17, 17, 17, 0.6);
 }
 .title {
@@ -58,13 +61,13 @@ button {
   transform: translateX(0);
 }
 .show .back-to-position.delay-1 {
-  transition-delay: 0.3s;
+  transition-delay: translateX 0.3s;
 }
 .show .back-to-position.delay-2 {
-  transition-delay: 0.5s;
+  transition-delay: translateX 0.5s;
 }
 .show .back-to-position.delay-3 {
-  transition-delay: 0.7s;
+  transition-delay: translateX 0.7s;
 }
 
 /* header */
@@ -189,8 +192,7 @@ header {
   margin-top: 20px;
 }
 .platformService img {
-  width: 100%;
-  height: auto;
+  height: 342px;
   margin-top: 70px;
 }
 
@@ -732,7 +734,24 @@ footer > .inner > .rightFooter > div > button + button {
   opacity: 0;
 }
 
+header .btn-hamburger {
+  display: none;
+}
+
+header .btn-hamburger > span {
+  color: #4262ff;
+  font-size: 40px;
+}
 
 @media screen and (max-width: 1024px) {
+}  
+@media screen and (max-width: 767px) {
+  header nav,
+  header .icons {
+    display: none;
+  }
+  header .btn-hamburger {
+    display: block;
+  }
   
 }
