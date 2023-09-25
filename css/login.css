@@ -4,6 +4,10 @@ html {
 }
 input {
   font-family: 'Pretendard';
+  box-sizing: border-box;
+}
+button {
+  font-family: 'Pretendard';
 }
 .bg {
   width: 100%;
@@ -15,6 +19,7 @@ input {
 }
 .container {
   margin: auto;
+  height: 400px;
 }
 .container > .logo {
   margin-bottom: 40px;
@@ -23,27 +28,48 @@ input {
   display: block;
   margin: 0 126px;
 }
-
 .container > .inputBox {
-
+  margin-bottom: 16px;
 }
 .container > .inputBox > input {
-  width: 334px;
-  height: 22px;
+  width: 384px;
+  height: 56px;
   padding: 16px 24px;
   outline: none;
   border: #fff;
   border-radius: 99px;
   font-size: 16px;
+  appearance: none;
 }
 .container > .inputBox > input::placeholder {
   font-weight: 700;
+  color: #808080;
   opacity: 0.8;
 }
 .container > .inputBox > input:focus::placeholder {
   color: transparent;
 }
-
 .container > .inputBox > input:focus {
   border: 1px solid #4262FF;
+}
+.container > .inputBox.pw {
+  position: relative;
+}
+.container > .inputBox.pw > span {
+  font-size: 18px;
+  color: #808080;
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  cursor: pointer;
+}
+.container > .loginBtn > button {
+  width: 384px;
+  height: 56px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 99px;
+  font-size: 20px;
+  font-weight: 500;
 }
