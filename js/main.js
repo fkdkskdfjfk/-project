@@ -1,4 +1,3 @@
-
 new Swiper('.aiService .swiper', {
   loop: true, 
   autoplay: false, 
@@ -62,3 +61,19 @@ contactIconEl.addEventListener('click', function () {
     scrollTo: 5900 
   });
 });
+
+// 햄버거
+const hamburgerEl = document.querySelector('.btn-hamburger');
+const btn_closeEl = document.querySelector('.btn-close');
+const m_navEl = document.querySelector('.m-nav');
+const bgEl = document.querySelector('.bg');
+
+hamburgerEl.addEventListener('click', function () {
+  m_navEl.classList.add('active');
+  bgEl.classList.add('on');
+});
+btn_closeEl.addEventListener('click', function () {
+  m_navEl.classList.remove('active');
+  bgEl.classList.remove('on');
+});
+

@@ -770,13 +770,47 @@ footer > .inner > .rightFooter > div > button + button {
 
 header .btn-hamburger {
   display: none;
+  margin-right: 20px;
 }
-
 header .btn-hamburger > span {
   color: #4262ff;
   font-size: 40px;
 }
+header .m-nav {
+  width: 40%;
+  height: 100vh;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: -50%;
+  transition: .5s;
+  z-index: 3000;
+  border: 1px solid #333;
+}
+/* body > .bg {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 500;
+  background: #00000099;
+  visibility: hidden;
+}
+body > .bg.on {
+  visibility: visible;
+} */
+header .m-nav > div {
+  text-align: right;
+}
+header .m-nav > .m-menu > li {}
 
+header .m-nav > .m-menu > li > a{
+  font-size: 20px;
+}
+header .m-nav > div > .btn-close span {
+  margin-top: 14px;
+  margin-right: 12px;
+  font-size: 30px;
+}
 @media screen and (max-width: 1024px) {
 }  
 @media screen and (max-width: 767px) {
@@ -789,3 +823,6 @@ header .btn-hamburger > span {
   }
   
 }
+header .m-nav.active {
+    right: 0%;
+  }
