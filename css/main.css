@@ -75,16 +75,47 @@ button {
 
 /* header */
 header {
-  max-width: 1920px;
+  /* max-width: 1920px; */
+  width: 100%;
   padding: 0 40px;
 }
+.headerBox.scrolled {
+  height: 80px;
+  background-color: #ffffffe6;
+  transition: 0.3s;
+}
+.headerBox.scrolled > a > img {
+  height: 20px;
+  width: 98px;
+}
+.headerBox.scrolled > nav > .menu > li > a {
+  font-size: 17px;
+  color: #111;
+}
+.headerBox.scrolled > nav > .menu > li > ul {
+  width: 100px;
+}
+.headerBox.scrolled > .icons span {
+  font-size: 24px;
+}
+
 .headerBox {
   width: 100%;
   height: 128px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: relative; */
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  transition: 0.3s;
+}
+.headerBox > a {
+  margin-left: 40px;
+}
+.headerBox > .icons {
+  margin-right: 40px;
 }
 .headerBox > nav {
   max-width: 1400px;
@@ -134,7 +165,6 @@ header {
   font-size: 16px;
   color: #111;
 }
-
 .headerBox .icons span {
   margin-left: 16px;
   font-size: 26px;
@@ -147,6 +177,7 @@ header {
 /* main section */
 
 .main {
+  margin-top: 130px;
   padding: 40px 0 80px 0;
   color: #111;
   background-image: url("https://img.freepik.com/free-vector/abstract-blue-geometric-shapes-background_1035-17545.jpg?w=996&t=st=1695113799~exp=1695114399~hmac=7cea277cd39fa61c8aa3c48bdfafff19eccb52c2e85cf9e598cac22b93a7ea9a");

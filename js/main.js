@@ -41,3 +41,17 @@ spyEls.forEach(function (spyEl) {
   .setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
   .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수!)
 });
+
+// 헤더 고정
+const headerEl = document.querySelector('.headerBox');
+
+window.addEventListener('scroll', function () {
+  if (this.window.scrollY > 150 ) {
+    headerEl.classList.add('scrolled');
+  } else {
+    headerEl.classList.remove('scrolled');
+  }
+});
+
+// 헤더의 contact 아이콘 클릭 시 이동
+const contactIconEl = document.querySelector('.contactIcon');
