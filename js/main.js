@@ -9,7 +9,8 @@ new Swiper('.aiService .swiper', {
     prevEl: '.aiService .swiper-button-prev'
   }
 });
-  // to-top
+
+// to-top
 const toTopEl = document.querySelector('#to-top');
 console.log(toTopEl);
 toTopEl.addEventListener('click', function () {
@@ -55,3 +56,9 @@ window.addEventListener('scroll', function () {
 
 // 헤더의 contact 아이콘 클릭 시 이동
 const contactIconEl = document.querySelector('.contactIcon');
+
+contactIconEl.addEventListener('click', function () {
+  gsap.to(window, 0.6, {
+    scrollTo: 5900 
+  });
+});
