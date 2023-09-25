@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
 
+  <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+
   <!-- 스타일 초기화 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
   <!-- 폰트 -->
@@ -32,7 +34,7 @@
       <div class="inputBox pw">
         <input type="password" id="pw" placeholder="비밀번호">
         <label for="pw"></label>
-        <span class="material-symbols-outlined">visibility_off</span>
+        <span class="material-symbols-outlined seePw">visibility_off</span>
       </div>
       <div class="loginBtn">
         <button type="submit">로그인</button>
@@ -41,8 +43,36 @@
       <div class="findPw">
         <button type="button">비밀번호 찾기</button>
       </div>
+      <div class="sns">
+        <p>SNS 계정으로 로그인</p>
+        <div class="snsIcons">
+          <img src="./image/google_icon.png" alt="구글 아이콘">
+          <img src="./image/kakao_icon.png" alt="카카오톡 아이콘">
+          <img src="./image/naver_icon.png" alt="네이버 아이콘">
+        </div>
+      </div>
+      <div class="sign">
+        <button type="button">회원가입</button>
+      </div>
+      <p>회원가입 시 한달 무료</p>
     </div>
   </div>
 
+  <script>
+    const seePwEl = document.querySelector('.seePw');
+    const pwEl = document.querySelector('#pw');
+
+    seePwEl.addEventListener('click', function () {
+      if (seePwEl.classList.contains('see')) {
+        seePwEl.classList.remove('see');
+        seePwEl.textContent = 'visibility_off';
+        pwEl.type = 'password';
+      } else {
+        seePwEl.classList.add('see');
+        seePwEl.textContent = 'visibility';
+        pwEl.type = 'text';
+      }
+    });
+  </script>
 </body>
 </html>

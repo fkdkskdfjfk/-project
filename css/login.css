@@ -19,7 +19,6 @@ button {
 }
 .container {
   margin: auto;
-  height: 400px;
 }
 .container > .logo {
   margin-bottom: 40px;
@@ -72,4 +71,64 @@ button {
   border-radius: 99px;
   font-size: 20px;
   font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.container > .loginBtn > button:hover {
+  opacity: 0.7;
+}
+
+.container > .findPw {
+  display: flex;
+  justify-content: center;
+}
+.container > .findPw > button {
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  margin-top: 20px;
+}
+.container > .sns {
+  margin-top: 32px;
+  border-top: 2px solid #d0d9e3;
+  text-align: center;
+}
+.container > .sns > p {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: #5b636d;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #f2f2f2;
+  transform: translateY(-10px);
+}
+.container > .sns > .snsIcons > img {
+  width: 58px;
+  cursor: pointer;
+}
+.container > .sns > .snsIcons > img + img {
+  margin-left: 12px;
+}
+.container > .sns > .snsIcons > img:hover {
+  opacity: 0.6;
+}
+.container > .sign > button {
+  width: 100%;
+  height: 48px;
+  margin-top: 28px;
+  background-color: #f2f2f2;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #d0d9e3;
+  cursor: pointer;
+}
+.container > p {
+  color: #5b636d;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 16px 0;
+  text-align: center;
 }
