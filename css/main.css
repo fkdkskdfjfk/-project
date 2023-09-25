@@ -24,6 +24,10 @@ button {
   background-color: #fff;
   cursor: pointer;
   letter-spacing: -1px;
+  transition: 0.3s;
+}
+.btn.btn--white {
+  transition: 0s;
 }
 .btn.btn--white:hover {
   border: 2px solid #111;
@@ -32,7 +36,6 @@ button {
   color: #fff;
   border: none;
   background-color: #111;
-  transition: background-color 0.3s;
 }
 .btn.btn--black:hover {
   background-color: rgba(17, 17, 17, 0.6);
@@ -61,13 +64,13 @@ button {
   transform: translateX(0);
 }
 .show .back-to-position.delay-1 {
-  transition-delay: translateX 0.3s;
+  transition-delay: 0.3s;
 }
 .show .back-to-position.delay-2 {
-  transition-delay: translateX 0.5s;
+  transition-delay: 0.6s;
 }
 .show .back-to-position.delay-3 {
-  transition-delay: translateX 0.7s;
+  transition-delay: 0.9s;
 }
 
 /* header */
@@ -386,7 +389,7 @@ header {
   margin-top: 20px;
   line-height: 27px;
 }
-.aiHuman > .inner > .Box > .humanContent > button {
+.aiHuman > .inner > .Box > .humanContent > div > button {
   margin-top: 48px;
   width: 234px;
   height: 64px;
@@ -410,7 +413,7 @@ header {
   text-align: left;
 }
 
-.maumOrchestra > .inner > .Box > .orchestraContent > div {
+.maumOrchestra > .inner > .Box > .orchestraContent > .title {
   margin-top: 70px;
 }
 .maumOrchestra > .inner > .Box > .orchestraContent > h1 {
@@ -425,7 +428,7 @@ header {
   margin-top: 20px;
   line-height: 27px;
 }
-.maumOrchestra > .inner > .Box > .orchestraContent > button {
+.maumOrchestra > .inner > .Box > .orchestraContent > div > button {
   margin-top: 48px;
   width: 300px;
   height: 64px;
@@ -465,7 +468,7 @@ header {
   margin-top: 20px;
   line-height: 27px;
 }
-.maumChatbot > .inner > .Box > .maumChatbotContent > button {
+.maumChatbot > .inner > .Box > .maumChatbotContent > div > button {
   margin-top: 48px;
   width: 234px;
   height: 64px;
@@ -649,7 +652,7 @@ footer {
   padding: 0 80px 40px 80px;
 }
 footer > .inner {
-  /* width: 1200px; */
+  width: 1200px;
   display: flex;
   justify-content: space-between;
 }
