@@ -65,15 +65,15 @@ contactIconEl.addEventListener('click', function () {
 // 햄버거
 const hamburgerEl = document.querySelector('.btn-hamburger');
 const btn_closeEl = document.querySelector('.btn-close');
-const m_navEl = document.querySelector('.m-nav');
+// const m_navEl = document.querySelector('.m-nav');
 const bgEl = document.querySelector('.bg');
 
 hamburgerEl.addEventListener('click', function () {
-  m_navEl.classList.add('active');
-  bgEl.classList.add('on');
+  // m_navEl.classList.add('active');
+  bgEl.classList.add('active');
 });
 btn_closeEl.addEventListener('click', function () {
-  m_navEl.classList.remove('active');
-  bgEl.classList.remove('on');
+  // m_navEl.classList.remove('active');
+  bgEl.classList.remove('active');
 });
 

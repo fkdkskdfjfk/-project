@@ -768,13 +768,18 @@ footer > .inner > .rightFooter > div > button + button {
   opacity: 0;
 }
 
-header .btn-hamburger {
-  display: none;
-  margin-right: 20px;
-}
-header .btn-hamburger > span {
-  color: #4262ff;
-  font-size: 40px;
+/* 모바일용 */
+.headerBox > .bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 0vh;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+} 
+.headerBox > .bg.active {
+  height: 100vh;
 }
 header .m-nav {
   width: 40%;
@@ -784,23 +789,25 @@ header .m-nav {
   top: 0;
   right: -50%;
   transition: .5s;
-  z-index: 3000;
+  z-index: 999;
   border: 1px solid #333;
+  border-radius: 10px;
+  margin: 5px 5px;
+  
 }
-/* body > .bg {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  z-index: 500;
-  background: #00000099;
-  visibility: hidden;
-}
-body > .bg.on {
-  visibility: visible;
-} */
 header .m-nav > div {
   text-align: right;
 }
+
+header .btn-hamburger {
+  display: none;
+  margin-right: 20px;
+}
+header .btn-hamburger > span {
+  color: #4262ff;
+  font-size: 40px;
+}
+
 header .m-nav > .m-menu > li {}
 
 header .m-nav > .m-menu > li > a{
@@ -811,8 +818,7 @@ header .m-nav > div > .btn-close span {
   margin-right: 12px;
   font-size: 30px;
 }
-@media screen and (max-width: 1024px) {
-}  
+
 @media screen and (max-width: 767px) {
   header nav,
   header .icons {
@@ -821,8 +827,8 @@ header .m-nav > div > .btn-close span {
   header .btn-hamburger {
     display: block;
   }
-  
+
 }
-header .m-nav.active {
+header .bg.active > .m-nav {
     right: 0%;
   }
