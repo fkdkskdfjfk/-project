@@ -229,7 +229,9 @@ header {
   height: 342px;
   margin-top: 70px;
 }
-
+.platformService .m-img {
+  display: none;
+}
 /* Steps */
 .steps > .depth1 {
   padding: 20px 20px 0;
@@ -769,10 +771,14 @@ footer > .inner > .rightFooter > div > button + button {
 }
 
 /* 모바일용 */
-/* .btn-icon {
-  background-color: #fff;
-  border: none;
-} */
+header .btn-hamburger {
+  display: none;
+  margin-right: 20px;
+}
+header .btn-hamburger > span {
+  color: #4262ff;
+  font-size: 40px;
+}
 .headerBox > .bg {
   position: fixed;
   top: 0;
@@ -785,6 +791,9 @@ footer > .inner > .rightFooter > div > button + button {
 .headerBox > .bg.active {
   height: 100vh;
 }
+header .bg.active > .m-nav {
+    right: 0%;
+  }
 header .m-nav {
   width: 288px;
   /* height: 480px; */
@@ -794,11 +803,13 @@ header .m-nav {
   right: -50%;
   transition: .5s;
   z-index: 999;
-  border: 1px solid #333;
+  border: none;
   border-radius: 10px;
   margin: 5px 5px;
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
+  box-shadow: rgb(17, 17, 17) 0px 2px 8px;
 }
 header .m-nav > .m-icons {
   width: 220px;
@@ -809,6 +820,12 @@ header .m-nav > .m-icons {
   justify-content: flex-start;
   /* align-items: flex-end; */
 }
+header .m-nav > .m-icons > div:nth-child(2) {
+  margin-left: 25px;
+}
+header .m-nav > .m-icons > div:nth-child(4) {
+  margin-left: 12px;
+}
 header .m-nav > .m-icons button {
   height: 48px;
   display: flex;
@@ -816,6 +833,7 @@ header .m-nav > .m-icons button {
   align-items: center;
   background-color: #fff;
   border: none;
+  cursor: pointer;
 }
 header .m-nav > .m-icons button > span.icon {
   display: block;
@@ -827,24 +845,28 @@ header .m-nav > .m-icons button > span.iconName {
   font-size: 14px;
   margin-left: 6px;
 }
-
 header .m-nav > div {
   text-align: right;
 }
-header .btn-hamburger {
-  display: none;
-  margin-right: 20px;
-}
-header .btn-hamburger > span {
-  color: #4262ff;
-  font-size: 40px;
-}
 header .m-nav > .m-menu > li {
-  width: 220px;
+  width: 288px;
+  background-color: #4262FF;
+  padding: 14px 20px;
+  border-bottom: 0.5px solid #e9ebed4d;
+
+  /* border: 1px solid #fff; */
 }
 header .m-nav > .m-menu > li > a{
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 700;
 }
+header .m-nav > .m-menu > li a{
+  color: #fff;
+}
+header .m-nav > .m-menu > li > ul > li {
+  margin: 5px 10px;
+}
+
 header .m-nav > div > .btn-close span {
   margin-top: 14px;
   /* margin-right: 12px; */
@@ -860,7 +882,89 @@ header .m-nav > div > .btn-close span {
     display: block;
   }
 
-}
-header .bg.active > .m-nav {
-    right: 0%;
+  /* main */
+  .main .mainContent > h1 {
+    font-size: 32px;
   }
+  .main .mainContent > h2 {
+    font-size: 18px;
+  }
+  .main > .inner > .btn-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main > .inner > .btn-group > .btn {
+    width: 206px;
+    height: 48px;
+    margin: 5px;
+  }
+  .main > .inner > .platformService > .title, 
+  .main > .inner > .platformService > h2 {
+    font-size: 16px;
+  }
+  .main > .inner > .platformService > h1 {
+    font-size: 24px;
+  }
+  .platformService img.pc-img {
+    display: none;
+  }
+  .platformService img.m-img {
+    display: inline-block;
+  }
+  .main > .inner > .steps > .depth1 {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .main > .inner > .steps > .depth1 > li {
+    width: 100%;
+    margin: 20px 20px;
+  }
+  .main > .inner > .steps > .depth1 > li > .class_half_btn {
+    display: flex;
+    justify-content: center;
+  }
+  .main > .inner > .steps > .depth1 > li > .class_half_btn > button {
+    width: 128px;
+    height: 48px;
+    background-color: #111;
+    color: #fff;
+    font-size: 16px;
+  }
+  .main > .inner > .steps > .depth1 > li > button {
+    width: 256px;
+    height: 48px;
+    background-color: #111;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  /* serviceGuide */
+  .serviceGuide > .inner > .btn-guide {
+    display: flex;
+    flex-direction: column;
+  }
+  .serviceGuide > .inner > .btn-guide > .guide {
+    width: 646px;
+    height: 78px;
+    display: flex;
+    padding: 32px;
+  }
+  .serviceGuide > .inner > .btn-guide > .guide > p:first-child {
+    font-size: 14px;
+  }
+  .serviceGuide > .inner > .btn-guide > .guide > p.btn-content {
+    font-size: 20px;
+  }
+
+  .serviceGuide > .inner > .btn-guide > .guide > div {
+    width: 80px;
+    height: 80px;
+  }
+  .serviceGuide > .inner > .btn-guide > .guide > div > img {
+    width: 80px;
+    height: 80px;
+  }
+
+}

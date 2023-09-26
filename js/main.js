@@ -62,18 +62,15 @@ contactIconEl.addEventListener('click', function () {
   });
 });
 
-// 햄버거
+// 모바일 메뉴 열기/닫기
 const hamburgerEl = document.querySelector('.btn-hamburger');
 const btn_closeEl = document.querySelector('.btn-close');
-// const m_navEl = document.querySelector('.m-nav');
 const bgEl = document.querySelector('.bg');
 
 hamburgerEl.addEventListener('click', function () {
-  // m_navEl.classList.add('active');
   bgEl.classList.add('active');
 });
 btn_closeEl.addEventListener('click', function () {
-  // m_navEl.classList.remove('active');
   bgEl.classList.remove('active');
 });
 
