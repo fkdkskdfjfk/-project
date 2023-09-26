@@ -769,6 +769,10 @@ footer > .inner > .rightFooter > div > button + button {
 }
 
 /* 모바일용 */
+/* .btn-icon {
+  background-color: #fff;
+  border: none;
+} */
 .headerBox > .bg {
   position: fixed;
   top: 0;
@@ -782,8 +786,8 @@ footer > .inner > .rightFooter > div > button + button {
   height: 100vh;
 }
 header .m-nav {
-  width: 40%;
-  height: 100vh;
+  width: 288px;
+  /* height: 480px; */
   background-color: #fff;
   position: fixed;
   top: 0;
@@ -793,12 +797,40 @@ header .m-nav {
   border: 1px solid #333;
   border-radius: 10px;
   margin: 5px 5px;
-  
+  display: flex;
+  flex-wrap: wrap;
 }
+header .m-nav > .m-icons {
+  width: 220px;
+  height: 112px;
+  margin: 8px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  /* align-items: flex-end; */
+}
+header .m-nav > .m-icons button {
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: none;
+}
+header .m-nav > .m-icons button > span.icon {
+  display: block;
+  color: #4262FF;
+  font-size: 22px;
+}
+header .m-nav > .m-icons button > span.iconName {
+  display: block;
+  font-size: 14px;
+  margin-left: 6px;
+}
+
 header .m-nav > div {
   text-align: right;
 }
-
 header .btn-hamburger {
   display: none;
   margin-right: 20px;
@@ -807,15 +839,15 @@ header .btn-hamburger > span {
   color: #4262ff;
   font-size: 40px;
 }
-
-header .m-nav > .m-menu > li {}
-
+header .m-nav > .m-menu > li {
+  width: 220px;
+}
 header .m-nav > .m-menu > li > a{
   font-size: 20px;
 }
 header .m-nav > div > .btn-close span {
   margin-top: 14px;
-  margin-right: 12px;
+  /* margin-right: 12px; */
   font-size: 30px;
 }
 
