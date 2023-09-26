@@ -3,9 +3,18 @@ new Swiper('.aiService .swiper', {
   autoplay: false, 
   slidesPerView: 4, // 한번에 보여줄 슬라이드 개수(기본값: 1)
   spaceBetween: 0, // 슬라이드 사이 여백(간격) px
-  navigation: { // 슬라이드 이전/다음 버튼 사용
+  navigation: {
     nextEl: '.aiService .swiper-button-next', 
     prevEl: '.aiService .swiper-button-prev'
+  },
+  breakpoints: {
+    400: {
+      slidesPerView: 2,
+    },
+    767: {
+      slidesPerView: 4,
+    }
+
   }
 });
 
@@ -32,6 +41,7 @@ window.addEventListener('scroll', function () {
   }
 });
 
+// 스크롤 시 튀어나오는 효과
 const spyEls = document.querySelectorAll('section.scroll-spy');
 spyEls.forEach(function (spyEl) {
   new ScrollMagic.Scene({ // 감시할 장면(Scene) 추가 및 옵션 지정
@@ -74,3 +84,16 @@ btn_closeEl.addEventListener('click', function () {
   bgEl.classList.remove('active');
 });
 
+// 미디어쿼리
+// if (matchMedia("screen and (max-width: 767px)").matches) {
+//   new Swiper('.aiService .swiper', {
+//     loop: true, 
+//     autoplay: false, 
+//     slidesPerView: 2, // 한번에 보여줄 슬라이드 개수(기본값: 1)
+//     spaceBetween: 0, // 슬라이드 사이 여백(간격) px
+//     navigation: { // 슬라이드 이전/다음 버튼 사용
+//       nextEl: '.aiService .swiper-button-next', 
+//       prevEl: '.aiService .swiper-button-prev'
+//     }
+//   });
+// }

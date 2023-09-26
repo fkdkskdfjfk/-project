@@ -881,7 +881,6 @@ header .m-nav > div > .btn-close span {
   header .btn-hamburger {
     display: block;
   }
-
   /* main */
   .main .mainContent > h1 {
     font-size: 32px;
@@ -941,24 +940,36 @@ header .m-nav > div > .btn-close span {
   }
 
   /* serviceGuide */
+  .serviceGuide > .inner > .title {
+    font-size: 16px;
+  }
+  .serviceGuide > .inner > h1 {
+    font-size: 24px;
+  }
   .serviceGuide > .inner > .btn-guide {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   }
   .serviceGuide > .inner > .btn-guide > .guide {
     width: 646px;
     height: 78px;
     display: flex;
-    padding: 32px;
+    padding: 32px 36px;
+    position: relative;
   }
-  .serviceGuide > .inner > .btn-guide > .guide > p:first-child {
+  .serviceGuide > .inner > .btn-guide > .guide > p.btn-name {
+    height: 16px;
     font-size: 14px;
   }
   .serviceGuide > .inner > .btn-guide > .guide > p.btn-content {
+    position: absolute;
     font-size: 20px;
   }
-
   .serviceGuide > .inner > .btn-guide > .guide > div {
+    position: absolute;
+    right: 40px;
     width: 80px;
     height: 80px;
   }
@@ -966,5 +977,33 @@ header .m-nav > div > .btn-close span {
     width: 80px;
     height: 80px;
   }
+  .serviceGuide > .inner > .btn-guide > .guide + .guide {
+    margin: 30px 0 0;
+  }
 
+  /* AI Service */
+  .aiService > .inner > .title,
+  .aiService > .inner > p {
+    font-size: 16px;
+  }
+  .aiService > .inner > h1 {
+    font-size: 24px;
+  }
+  .aiService > .inner > .swiper-button-prev,
+  .aiService > .inner > .swiper-button-next {
+    display: none;
+  }
+  .aiService > .inner > .serviceBtn > button {
+    width: 224px;
+    height: 48px;
+    font-size: 18px;
+  }
+
+  /* ai Human */
+  .aiHuman > .inner > .Box {
+    display: flex;
+  }
+  .aiHuman > .inner > .Box > .img > img {
+    /* width: 384px; */
+  }
 }
