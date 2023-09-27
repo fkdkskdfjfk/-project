@@ -721,6 +721,10 @@ footer > .inner > .rightFooter > a {
   font-weight: 700;
   margin-top: 20px;
 }
+footer > .inner > .rightFooter > a:hover {
+  text-decoration: underline;
+}
+
 footer > .inner > .rightFooter > p:nth-child(3) {
   margin: 10px 0 20px 0;
 }
@@ -738,6 +742,9 @@ footer > .inner > .rightFooter > div > button {
   background-repeat: no-repeat;
   background-position: right;
   cursor: pointer;
+}
+footer > .inner > .rightFooter > div > button:hover {
+  text-decoration: underline;
 }
 footer > .inner > .rightFooter > div > button + button {
   margin-top: 5px;
@@ -812,6 +819,7 @@ header .m-nav > .m-icons {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  padding-top: 5px;
 }
 header .m-nav > .m-icons > div:nth-child(2) {
   margin-left: 25px;
@@ -853,6 +861,10 @@ header .m-nav > .m-menu > li > a{
 }
 header .m-nav > .m-menu > li a {
   color: #fff;
+  transition: .2s;
+}
+header .m-nav > .m-menu > li a:hover {
+  opacity: 0.7;
 }
 header .m-nav > .m-menu > li > ul > li {
   margin: 5px 10px;
@@ -900,6 +912,9 @@ header .m-nav > div > .btn-close span {
   }
   .main > .inner > .platformService > h1 {
     font-size: 24px;
+  }
+  .platformService {
+    margin-top: 80px;
   }
   .platformService img.pc-img {
     display: none;
@@ -956,7 +971,7 @@ header .m-nav > div > .btn-close span {
     align-items: center;
   }
   .serviceGuide > .inner > .btn-guide > .guide {
-    width: 640px;
+    width: 620px;
     height: 78px;
     display: flex;
     padding: 32px 36px;
@@ -981,7 +996,7 @@ header .m-nav > div > .btn-close span {
     height: 80px;
   }
   .serviceGuide > .inner > .btn-guide > .guide + .guide {
-    margin: 30px 0 0;
+    margin: 20px 0 0;
   }
 
   /* AI Service */
@@ -1031,6 +1046,9 @@ header .m-nav > div > .btn-close span {
   }
 
   /* maumOrchestra */
+  .maumOrchestra {
+    padding-top: 20px;
+  }
   .maumOrchestra > .inner > .Box {
     display: flex;
     flex-direction: column;
@@ -1059,6 +1077,9 @@ header .m-nav > div > .btn-close span {
   }
 
   /* maumChatbot */
+  .maumChatbot {
+    padding-top: 20px;
+  }
   .maumChatbot > .inner > .Box {
     display: flex;
     flex-direction: column-reverse;
@@ -1087,6 +1108,9 @@ header .m-nav > div > .btn-close span {
   }
 
   /* maumData */
+  .maumData {
+    padding-top: 20px;
+  }
   .maumData > .inner > .Box {
     display: flex;
     flex-direction: column;

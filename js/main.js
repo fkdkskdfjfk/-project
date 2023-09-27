@@ -83,3 +83,6 @@ hamburgerEl.addEventListener('click', function () {
 btn_closeEl.addEventListener('click', function () {
   bgEl.classList.remove('active');
 });
+
+// 서비스 신청/문의 버튼 마우스 올렸을 때 떠다니는 animation
+
