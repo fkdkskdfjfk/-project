@@ -224,6 +224,7 @@ header {
   margin-top: 20px;
 }
 .platformService img {
+  /* width: 100%;  */
   height: 342px;
   margin-top: 70px;
 }
@@ -902,9 +903,12 @@ header .m-nav > div > .btn-close span {
   }
   .platformService img.pc-img {
     display: none;
+    width: 100%;
   }
   .platformService img.m-img {
     display: inline-block;
+    width: 372px;
+    height: 342px;
   }
   .main > .inner > .steps > .depth1 {
     flex-direction: column;
